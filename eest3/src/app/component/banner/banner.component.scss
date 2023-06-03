@@ -1,0 +1,27 @@
+.card {
+  border: none;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 80px;
+}
+
+.centerLink {
+  margin-top: 15px;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.centerLink i {
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  /* Ajusta este valor según sea necesario */
+}

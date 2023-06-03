@@ -1,0 +1,14 @@
+/* Animación de agrandamiento */
+.imgLogo{
+  width: 100px;
+}
+.navbar-nav .animacionBtn {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.navbar-nav .animacionBtn:hover {
+  border-radius: 5px;
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(199, 198, 198, 0.5);
+}

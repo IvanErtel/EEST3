@@ -1,0 +1,47 @@
+<!-- <div class="historia-card" style="width: 18rem;">
+    <img [src]="imagen" class="card-img-top" alt="Imagen">
+    <div class="card-body">
+      <h5 class="card-title">{{ titulo }}</h5>
+      <p class="card-text">{{ extracto }}</p>
+      <a href="#" class="btn btn-primary" (click)="toggleHistoria()">Leer más</a>
+    </div>
+    <div class="historia-content" *ngIf="mostrarHistoria">
+      <p>{{ textoCompleto }}</p>
+      <img *ngFor="let imagen of imagenesAdicionales" [src]="imagen" alt="Imagen adicional">
+    </div>
+  </div>
+   -->
+
+   <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img [src]="imagen" class="card-img-top" alt="Imagen">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ titulo }}</h5>
+          <p class="card-text">{{ extracto }}</p>
+          <button class="btn btn-primary" (click)="openModal()">Leer más</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" #myModal tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalTitle">{{ titulo }}</h5>
+          <button type="button" class="close" (click)="closeModal()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>{{ textoCompleto }}</p>
+          <img *ngFor="let imagen of imagenesAdicionales" [src]="imagen" alt="Imagen adicional">
+        </div>
+      </div>
+    </div>
+  </div>
+  

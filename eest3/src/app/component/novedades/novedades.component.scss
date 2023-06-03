@@ -1,0 +1,14 @@
+.avatar {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .views, .likes {
+    display: flex;
+    align-items: center;
+  }
+  
+  .views i, .likes i {
+    margin-right: 5px;
+  }
+  

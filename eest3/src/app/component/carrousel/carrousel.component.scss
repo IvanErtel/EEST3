@@ -1,0 +1,39 @@
+.carousel-inner {
+  height: auto;
+  -webkit-box-shadow: 6px 4px 9px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 6px 4px 9px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 6px 4px 9px 0px rgba(0, 0, 0, 0.46);
+  border-radius: 10px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carrouselAncho {
+  width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
+
+//   reemplazar iconos aqui debajo en url
+//   .carousel-control-prev-icon {
+//     background-image: url("ruta-a-icono-previo.png");
+//   }
+
+//   .carousel-control-next-icon {
+//     background-image: url("ruta-a-icono-siguiente.png");
+//   }
