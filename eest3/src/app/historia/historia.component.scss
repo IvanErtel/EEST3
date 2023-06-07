@@ -1,8 +1,38 @@
 .historia-content {
-    display: block;
-    height: auto;
-  }
-  
-  .card-img-top {
-    width: 100%;
-  }
+  display: block;
+  height: auto;
+
+}
+
+.cardImgContainer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.694)), url('../../assets/historia1.jpeg');
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 6px 4px 9px 0px rgba(0, 0, 0, 0.46);
+  -moz-box-shadow: 6px 4px 9px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 6px 4px 9px 0px rgba(0, 0, 0, 0.46);
+  border-radius: 10px;
+}
+
+.textColor {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.786);
+}
+
+.close {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.close:hover {
+  opacity: 1;
+  color: #ff0000;
+}
+
+.close:focus {
+  outline: none;
+}
